@@ -2,10 +2,7 @@ import { MoveableObject } from './moveable-object';
 import { StaticObject } from './static-object';
 
 export class Game {
-  constructor(private staticObjects: Array<StaticObject>, private movableObjects: Array<MoveableObject>) {
-    this.staticObjects = staticObjects;
-    this.movableObjects = movableObjects;
-  }
+  constructor(private staticObjects: Array<StaticObject>, private movableObjects: Array<MoveableObject>) {}
 
   play(): void {
     this.staticObjects.forEach((object) => console.log(object));

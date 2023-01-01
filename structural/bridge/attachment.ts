@@ -1,7 +1,5 @@
 export abstract class Attachment {
-  constructor(protected fileName: string) {
-    this.fileName = fileName
-  }
+  constructor(protected fileName: string) {}
 
   abstract details(): string;
 };

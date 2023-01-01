@@ -1,11 +1,7 @@
 import { IWebPage } from './i-web-page';
 
 export class WebPageDecorator implements IWebPage {
-  private page: IWebPage;
-
-  constructor(page: IWebPage) {
-    this.page = page;
-  }
+  constructor(private page: IWebPage) {}
 
   display(): void {
     this.page.display();

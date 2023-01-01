@@ -1,7 +1,5 @@
 export abstract class Shape {
-  constructor(protected color: string) {
-    this.color = color;
-  }
+  constructor(protected color: string) {}
 
   abstract clone(): Shape;
 };

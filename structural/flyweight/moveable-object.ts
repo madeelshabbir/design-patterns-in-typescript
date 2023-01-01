@@ -2,10 +2,7 @@ import { Point } from './point';
 import { StaticObject } from './static-object';
 
 export class MoveableObject {
-  constructor(public staticObject: StaticObject, public position : Point) {
-    this.staticObject = staticObject;
-    this.position = position;
-  }
+  constructor(public staticObject: StaticObject, public position : Point) {}
 
   move(): void {
     this.position.x += 1;
